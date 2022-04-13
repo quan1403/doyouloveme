@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Do you love me ?</h1>
+<button id="bt" onclick="bt()">Yes</button>
+<button  style="position: absolute" id="btn"onmousemove="changer()">No</button>
+<script>
+function changer() {
+    let btn = document.getElementById("btn");
+    btn.style.marginTop= Math.random()*500 +"px";
+    btn.style.marginLeft= Math.random()*500 +"px";
+}
+function bt(){
+    let bt=document.getElementById("bt").value;
+    alert("i love you")
+
+}
+
+
+</script>
+</body>
+</html>
